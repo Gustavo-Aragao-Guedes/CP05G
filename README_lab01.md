@@ -4,7 +4,9 @@ RA: 10376534
 
 Laboratório 1: Hello, World foi feito, executado e trazido para esse repositório através da AWS.
 
-Vi:
+
+
+Vi (código na linguagem C):
 
 ![Vi hello world](https://github.com/Gustavo-Aragao-Guedes/CP05G/assets/64610385/a4da8b71-4339-405d-9e5b-62fc8d0ba183)
 
