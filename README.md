@@ -1,4 +1,4 @@
-# Laboratórios de Computação Paralela
+# Laboratórios de Computação Paralela da turma 05G11
 
 Grupo Paralelopípedo (Individual)
 
