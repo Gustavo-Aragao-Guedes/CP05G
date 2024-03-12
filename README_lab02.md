@@ -4,8 +4,13 @@ RA: 10376534
 
 Laboratório 2 foi feito na linguagem C, e foi executado e trazido para esse repositório através da AWS. 
 
-Explicação:
-O código realiza a multiplicação de uma matriz por um vetor usando threads para paralelizar o cálculo. O tamanho e os valores dentro da matriz e do vetor são predefinidos no código.
+### Explicação:
+O código realiza a multiplicação de uma matriz por um vetor usando threads para paralelizar o cálculo.
+No início,  tamanho e os valores dentro da matriz e do vetor são predefinidos, assim como o número de threads. (Neste caso as quantidades são 3, definidos em #define N 3 #define NUM_THREADS N).
+
+São definidas as variáveis globais: a matriz, o vetor e o resultado.
+
+Depois é definida a função que faz a multiplicação da matriz pelo vetor.
 
 Criação e vi:
 
