@@ -6,11 +6,26 @@ Laboratório 2 foi feito na linguagem C, e foi executado e trazido para esse rep
 
 ### Explicação:
 O código realiza a multiplicação de uma matriz por um vetor usando threads para paralelizar o cálculo.
-No início,  tamanho e os valores dentro da matriz e do vetor são predefinidos, assim como o número de threads. (Neste caso as quantidades são 3, definidos em #define N 3 #define NUM_THREADS N).
+No início, otamanho e os valores dentro da matriz e do vetor são predefinidos, assim como o número de threads que serão usadas (Neste caso as quantidades são 3, definidos em #define N 3 #define NUM_THREADS N).
 
 São definidas as variáveis globais: a matriz, o vetor e o resultado.
 
-Depois é definida a função que faz a multiplicação da matriz pelo vetor.
+Depois é definida a função que faz a multiplicação da matriz pelo vetor. As threads são aplicadas nessa função, onde o argumento genéricos delas é convertido para um inteiro, e esse número inteiro é atribuido ao id da thread e cada uma das threads vai calcular uma parte do vetor resultado. No fim da função a thread é encerrada.
+
+No main: 
+São declaradas as variáveis locais das threads com o phtread_t e thread_args
+
+A matriz e o vetor são impressos.
+
+A threads são criadas, com pthread_create e pthread_join.
+
+- pthread_create: Cria uma nova thread. Recebe como argumentos um ponteiro para a variável da thread, atributos da thread, a função a ser executada pela thread e um argumento para a função.
+
+- pthread_join: Espera que uma thread termine sua execução antes de continuar. É usado aqui para esperar que todas as threads tenham terminado antes de imprimir o resultado.
+
+E por fim, o programa imprime a matriz e o vetor original e o vetor resultado da multiplicação.
+
+### AWS:
 
 Criação e vi:
 
