@@ -4,6 +4,9 @@ RA: 10376534
 
 Laboratório 2 foi feito na linguagem C, e foi executado e trazido para esse repositório através da AWS. 
 
+Explicação:
+O código realiza a multiplicação de uma matriz por um vetor usando threads para paralelizar o cálculo. O tamanho e os valores dentro da matriz e do vetor são predefinidos no código.
+
 Criação e vi:
 
 ![lab02 criação](https://github.com/Gustavo-Aragao-Guedes/CP05G/assets/64610385/ea02ba05-e4a3-4f72-9d89-82017c332c1e)
