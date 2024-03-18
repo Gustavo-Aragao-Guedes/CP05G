@@ -52,5 +52,12 @@ Tempo serial 4 processadores:
 
 
 
+https://tecnoblog.net/especiais/a-psicologia-nos-games-como-estrategia-para-te-emocionar/
+
+https://medium.com/@dora.izalima/qualidade-de-narrativas-para-jogos-um-guia-do-b%C3%A1sico-875bb24197d1
+
+https://drgameology.com/gamer-personas-understanding-game-psychology/
+
+
 
 
