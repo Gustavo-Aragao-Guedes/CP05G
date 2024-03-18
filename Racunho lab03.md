@@ -49,15 +49,3 @@ Máquina com 4 processadores:
 Tempo serial 4 processadores:
 
 ![Captura de tela de 2024-03-13 05-32-40](https://github.com/Gustavo-Aragao-Guedes/CP05G/assets/64610385/609ecde3-5bb6-4bec-81ee-c4041163a3c9)
-
-
-
-https://tecnoblog.net/especiais/a-psicologia-nos-games-como-estrategia-para-te-emocionar/
-
-https://medium.com/@dora.izalima/qualidade-de-narrativas-para-jogos-um-guia-do-b%C3%A1sico-875bb24197d1
-
-https://drgameology.com/gamer-personas-understanding-game-psychology/
-
-
-
-
