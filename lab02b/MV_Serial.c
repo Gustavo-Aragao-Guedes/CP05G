@@ -3,7 +3,7 @@
 #include <time.h>
 
 #define N 100
-
+j
 // Declaração das variáveis globais
 int matriz[N][N];
 int vetor[N];
