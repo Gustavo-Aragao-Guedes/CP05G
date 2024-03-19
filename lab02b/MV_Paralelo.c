@@ -3,7 +3,7 @@
 #include <pthread.h>
 #include <time.h>
 
-#define N 500
+#define N 1000
 #define MAX_THREADS 10
 
 int matriz[N][N];
