@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define N 100
+#define N 500
 
 // Declaração das variáveis globais
 int matriz[N][N];
