@@ -19,6 +19,8 @@ Paralelo com threads:
 
 ![Tempo P 1CPU](https://github.com/Gustavo-Aragao-Guedes/CP05G/assets/64610385/ec937aac-a6a6-4d05-8af2-48edbb21d84e)
 
+2 processadores:  Intel(R) Xeon(R) CPU E5-2670 v3 @ 2.30GHz
+
 
 
 
