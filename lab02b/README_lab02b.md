@@ -22,7 +22,10 @@ Paralelo com threads:
 2 processadores:  Intel(R) Xeon(R) CPU E5-2670 v3 @ 2.30GHz
 
 
-4 processadores:  Intel(R) Xeon(R) CPU E5-2670 v3 @ 2.30GHz
+4 processadores:  Intel(R) Xeon(R) i7-3612QM CPU @ 2.10GHz
+
+![312434718-f59d2790-14d1-4f47-93b3-95a59d3130a9](https://github.com/Gustavo-Aragao-Guedes/CP05G/assets/64610385/91ab9e16-1096-41b4-a9fd-c00fff71262f)
+
 
 6 processadores:  
 
