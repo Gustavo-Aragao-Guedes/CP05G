@@ -1,7 +1,7 @@
 Gustavo Aragão Guedes
 
 RA: 10376534
-j
+
 Laboratório 2 foi feito na linguagem C, e foi executado e trazido para esse repositório através da AWS. 
 
 ### Explicação:
