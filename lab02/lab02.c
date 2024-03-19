@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <pthread.h>
-
+y
 #define N 3
 #define NUM_THREADS N
 
