@@ -1,17 +1,17 @@
 ### Testes
 
-1 processador (AWS):
+**1 processador (AWS):**
 
 ![Configuração 1CPU](https://github.com/Gustavo-Aragao-Guedes/CP05G/assets/64610385/1ac61e5f-eba8-493f-938c-798cfa8fce66)
 
 
-Serial:
+* Serial: 0,030 segundos
 
 ![Teste S 1CPU](https://github.com/Gustavo-Aragao-Guedes/CP05G/assets/64610385/be624c4c-797b-4c42-b502-80df3d618006)
 
 ![Tempo S  1CPU](https://github.com/Gustavo-Aragao-Guedes/CP05G/assets/64610385/d4e62f78-9391-4685-8a29-67a540f606f8)
 
-Paralelo com threads:
+* Paralelo com threads: 1,890 segundos
 
 ![Teste P 1CPU](https://github.com/Gustavo-Aragao-Guedes/CP05G/assets/64610385/5b876968-7b52-4f3d-966a-36a7889eb0fa)
 
@@ -19,15 +19,30 @@ Paralelo com threads:
 
 ![Tempo P 1CPU](https://github.com/Gustavo-Aragao-Guedes/CP05G/assets/64610385/ec937aac-a6a6-4d05-8af2-48edbb21d84e)
 
-2 processadores:  Intel(R) Xeon(R) CPU E5-2670 v3 @ 2.30GHz
+**2 processadores:  Intel(R) Xeon(R) CPU E5-2670 v3 @ 2.30GHz**
 
+* Serial: 0,030 segundos
 
-4 processadores:  Intel(R) Xeon(R) i7-3612QM CPU @ 2.10GHz
+* Paralelo com threads: 0,95 segundos
+
+**4 processadores:  Intel(R) Xeon(R) i7-3612QM CPU @ 2.10GHz**
 
 ![312434718-f59d2790-14d1-4f47-93b3-95a59d3130a9](https://github.com/Gustavo-Aragao-Guedes/CP05G/assets/64610385/91ab9e16-1096-41b4-a9fd-c00fff71262f)
 
+* Serial: 0,030 segundos
 
-6 processadores:  
+* Paralelo com threads: 0,473 segundos
+
+
+**6 processadores: Intel(R) Xeon(R) CPU E-2236 @ 3.40GHz**
+
+* Serial: 0,030 segundos
+
+* Paralelo com threads: 0,315 segundos
+
+**8 processadores: Intel(R) Xeon(R) CPU E5-2670 v3 @ 2.30GHz**
+
+* Serial: 0,030 segundos
 
 
 
