@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define N 500
+#define N 1000
 
 // Declaração das variáveis globais
 int matriz[N][N];
@@ -26,7 +26,7 @@ int main() {
     }
 
     // Impressão da matriz e do vetor originais
-    printf("Matriz:\n");
+    /*printf("Matriz:\n");
     for (int i = 0; i < N; i++) {
         for (int j = 0; j < N; j++) {
             printf("%d ", matriz[i][j]);
@@ -38,7 +38,7 @@ int main() {
     for (int i = 0; i < N; i++) {
         printf("%d ", vetor[i]);
     }
-    printf("\n");
+    printf("\n");*/
 
     // Cálculo do resultado da multiplicação matriz-vetor
     for (int i = 0; i < N; i++) {
