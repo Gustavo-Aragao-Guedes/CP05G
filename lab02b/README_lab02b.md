@@ -52,6 +52,8 @@
 
 ![Multiplicação Matriz-vetor](https://github.com/Gustavo-Aragao-Guedes/CP05G/assets/64610385/a9b1d593-e6da-4f65-bc66-4fe24a054317)
 
+## Speedup
+
 
 
 
