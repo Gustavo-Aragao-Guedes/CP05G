@@ -22,6 +22,9 @@ Paralelo com threads:
 2 processadores:  Intel(R) Xeon(R) CPU E5-2670 v3 @ 2.30GHz
 
 
+4 processadores:  Intel(R) Xeon(R) CPU E5-2670 v3 @ 2.30GHz
+
+6 processadores:  
 
 
 
