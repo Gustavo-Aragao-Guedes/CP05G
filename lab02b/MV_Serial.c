@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+// A biblioteca time é usada para calcular os valores aleatórios dentro da matriz e do vetor, e não o tempo do código
 
 #define N 1000
 
