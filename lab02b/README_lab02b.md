@@ -66,7 +66,24 @@
 
 ![Multiplicação matriz-vetor-speedup](https://github.com/Gustavo-Aragao-Guedes/CP05G/assets/64610385/fc585eea-f8bd-4444-8db2-37f9f8ffad68)
 
+## Forma de melhorar o paralelismo do algorítmo: Escalonamento dinâmico
 
+Em vez de dividir o trabalho de forma estática entre as threads, como anteriormente, agora os trabalhos serão divididos em blocos menores e distribuidos conforme as threads ficam disponíveis.
+
+Foi adicionado o mutex ao algorítmo, ele é um mecanismo de sincronização usado em programação concorrente para controlar o acesso a recursos compartilhados por múltiplas threads. Ele permite que apenas uma thread por vez execute uma seção crítica do código.
+
+No novo algorítmo, cada thread bloqueia o mutex, verifica se há blocos restantes para processar e, em seguida, pega um bloco da variável next_block para processar. A variável next_block é atualizada atomicamente usando o mutex. Dessa forma, as threads obtêm blocos de trabalho dinamicamente conforme concluem seus blocos anteriores e melhoram o desempenho do programa.
+
+### Resultados novos na AWS:
+
+![Novo Setup P](https://github.com/Gustavo-Aragao-Guedes/CP05G/assets/64610385/68088b02-c567-4c94-8be3-9f3ef5101c59)
+
+![Novo teste P](https://github.com/Gustavo-Aragao-Guedes/CP05G/assets/64610385/9d928827-98e2-4f76-9e52-c4132c521c6a)
+
+![Novo tempo P](https://github.com/Gustavo-Aragao-Guedes/CP05G/assets/64610385/3e63fc4c-c6a2-4b73-8644-f6dc91924fec)
+
+
+## Novo Speedup
 
 
 
