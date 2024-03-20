@@ -1,3 +1,9 @@
+**Gustavo Aragão Guedes**
+
+**RA: 10376534**
+
+Laboratório 2b foi feito na linguagem c, com o uso da AWS para testes e LiveGap Charts (https://charts.livegap.com/) para a criação dos gráficos.
+
 ### Testes
 
 **1 processador (AWS):**
