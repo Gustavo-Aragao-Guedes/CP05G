@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <pthread.h>
 #include <time.h>
+// A biblioteca time é usada para calcular os valores aleatórios dentro da matriz e do vetor, e não o tempo do código
 
 #define N 1000
 #define MAX_THREADS 10
