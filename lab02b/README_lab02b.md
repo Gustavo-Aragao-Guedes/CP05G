@@ -54,7 +54,17 @@
 
 ## Speedup
 
+* 1P = 0,30 / 1,89 = 0,159
 
+* 2P = 0,30 / 0,95 = 0,316
+
+* 4P = 0,30 / 0,474 = 0,633
+
+* 6P = 0,30 / 0,317 = 0,946
+
+* 8P = 0,30 / 0,236 = 1,271
+
+![Multiplicação matriz-vetor-speedup](https://github.com/Gustavo-Aragao-Guedes/CP05G/assets/64610385/fc585eea-f8bd-4444-8db2-37f9f8ffad68)
 
 
 
