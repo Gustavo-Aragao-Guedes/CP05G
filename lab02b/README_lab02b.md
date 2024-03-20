@@ -82,11 +82,21 @@ No novo algorítmo, cada thread bloqueia o mutex, verifica se há blocos restant
 
 ![Novo tempo P](https://github.com/Gustavo-Aragao-Guedes/CP05G/assets/64610385/3e63fc4c-c6a2-4b73-8644-f6dc91924fec)
 
+Diferença: De 1,890 segundos para 1,235 segundos
 
 ## Novo Speedup
 
+* 1P = 0,30 / 1,235 = 0,243
 
+* 2P = 0,30 / 0,619 = 0,485
 
+* 4P = 0,30 / 0,309 = 0,971
+
+* 6P = 0,30 / 0,206 = 1,456
+
+* 8P = 0,30 / 0,155 = 1,935
+
+![Multiplicação matriz-vetor Speedup Novo(1)](https://github.com/Gustavo-Aragao-Guedes/CP05G/assets/64610385/2601df55-bde6-491f-b490-e7ee240bbd57)
 
 
 
