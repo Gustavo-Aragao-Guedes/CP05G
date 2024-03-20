@@ -56,7 +56,7 @@ Laboratório 2b foi feito na linguagem c, com o uso da AWS para testes e Livegap
 
 ## Tempo de execução:
 
-![Multiplicação Matriz-vetor](https://github.com/Gustavo-Aragao-Guedes/CP05G/assets/64610385/a9b1d593-e6da-4f65-bc66-4fe24a054317)
+![Multiplicação Matriz-vetor](https://github.com/Gustavo-Aragao-Guedes/CP05G/assets/64610385/8cb16406-3f14-4058-936d-a79aa5b83fda)
 
 ## Speedup
 
