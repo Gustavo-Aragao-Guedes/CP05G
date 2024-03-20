@@ -6,7 +6,7 @@
 #define N 1000
 #define MAX_THREADS 10
 #define BLOCK_SIZE 10
-e
+
 int matriz[N][N];
 int vetor[N];
 int resultado[N];
