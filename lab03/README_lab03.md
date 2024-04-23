@@ -8,6 +8,8 @@ Inclusão da API OpenMP.
 
 Para os testes, foram utilizados os valores de 100 trapézios e 100 threads para o cálculo da área.
 
+Alguns dos valores de tempo e speedups foram arredondados para ficarem com apenas 3 casas decimais depois da vírgula.
+
 ### Testes
 
 **1 processador (AWS):**
@@ -52,20 +54,19 @@ Para os testes, foram utilizados os valores de 100 trapézios e 100 threads para
 
 ## Tempo de execução:
 
-![Área sob a curva através da soma de trapézios](https://github.com/Gustavo-Aragao-Guedes/CP05G/assets/64610385/d66b09d0-be0d-4f32-a2ca-3cb1fc17b3e6)
-
+![Área sob a curva através da soma de trapézios](https://github.com/Gustavo-Aragao-Guedes/CP05G/assets/64610385/7f0d9c1c-907c-48e7-82e1-29882c443f0a)
 
 ## Speedup
 
-* 1P =  /  = 
+* 1P = 3,108 / 4,878 = 0,637
 
-* 2P =  /  = 
+* 2P = 3,108 / 2,439 = 1,274
 
-* 4P =  /  = 
+* 4P = 3,108 / 1,219 = 2,550
 
-* 6P =  /  = 
+* 6P = 3,108 / 0,949 = 3,275
 
-* 8P =  /  = 
+* 8P = 3,108 / 0,610 = 5,095
 
 
 ### Resultados novos na AWS:
