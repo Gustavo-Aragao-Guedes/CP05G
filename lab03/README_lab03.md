@@ -52,6 +52,7 @@ Para os testes, foram utilizados os valores de 100 trapézios e 100 threads para
 
 ## Tempo de execução:
 
+![Área sob a curva através da soma de trapézios](https://github.com/Gustavo-Aragao-Guedes/CP05G/assets/64610385/d66b09d0-be0d-4f32-a2ca-3cb1fc17b3e6)
 
 
 ## Speedup
