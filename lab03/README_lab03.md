@@ -11,7 +11,16 @@ Laboratório 3 foi feito na linguagem c, com o uso da AWS para testes e Livegap 
 ![Configuração 1CPU](https://github.com/Gustavo-Aragao-Guedes/CP05G/assets/64610385/1ac61e5f-eba8-493f-938c-798cfa8fce66)
 
 
-* Serial:  segundos
+
+
+
+
+
+* Serial: 1 segundo
+
+![image](https://github.com/Gustavo-Aragao-Guedes/CP05G/assets/64610385/b609958f-2449-4971-ace6-694c3facac5b)
+
+![image](https://github.com/Gustavo-Aragao-Guedes/CP05G/assets/64610385/8ad37a47-54b4-4daf-88e9-d8a09ce5cbdc)
 
 
 
