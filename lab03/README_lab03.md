@@ -74,23 +74,38 @@ Alguns dos valores de tempo e speedups foram arredondados para ficarem com apena
 
 Com a introdução da diretiva critical no código, a operação de soma da área sob a curva agora é protegida por ela, garantindo que apenas uma thread execute essa operação por vez. Isso evita possíveis problemas de concorrência que poderiam ocorrer se várias threads tentassem modificar a mesma variável ao mesmo tempo.
 
-### Resultados novos na AWS:
+![image](https://github.com/Gustavo-Aragao-Guedes/CP05G/assets/64610385/0b0476e8-c829-4035-a0bf-cef70bd6d123)
 
+Sem critical: 4,878 segundos
 
+Com critical: 4,397 segundos
 
-Diferença: De 1,890 segundos para 1,235 segundos
+* 1P = 4,397 segundos
+
+* 2P = 2,198 segundos
+
+* 4P = 1,099 segundos
+
+* 6P = 0,856 segundos
+
+* 8P = 0,550 segundos
 
 ## Novo Speedup
 
-* 1P =  /  = 
+* 1P = 3,108 / 4,397 = 0,707
 
-* 2P =  /  = 
+* 2P = 3,108 / 2,198 = 1,414
 
-* 4P =  /  = 
+* 4P = 3,108 / 1,099 = 2,828
 
-* 6P =  /  = 
+* 6P = 3,108 / 0,856 = 3,631
 
-* 8P =  /  = 
+* 8P = 3,108 / 0,550 = 5,651
+
+![Speedup com critical - Área sob a curva através da soma de trapézios](https://github.com/Gustavo-Aragao-Guedes/CP05G/assets/64610385/ab16e49f-9c9f-40b9-9e6e-8c54096094d0)
+
+
+
 
 
 
