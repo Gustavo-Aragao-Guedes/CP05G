@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h> 
+#include <stdlib.h>
 #include <math.h>
 
 // Função para calcular f(x) = sen(x)
@@ -23,7 +23,15 @@ double area_sob_curva(double a, double b, int n) {
 int main() {
     double a = 0.0; 
     double b = M_PI; 
-    int n = 9; 
+    int n; 
+
+    printf("Digite o número de trapézios desejado: ");
+    scanf("%d", &n);
+
+    if (n <= 0) {
+        printf("O número de trapézios deve ser positivo.\n");
+        return 1;
+    }
 
     double area = area_sob_curva(a, b, n);
 
@@ -31,4 +39,3 @@ int main() {
 
     return 0;
 }
-
