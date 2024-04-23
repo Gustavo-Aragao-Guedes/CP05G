@@ -70,6 +70,9 @@ Alguns dos valores de tempo e speedups foram arredondados para ficarem com apena
 
 ![Speedup - Área sob a curva através da soma de trapézios](https://github.com/Gustavo-Aragao-Guedes/CP05G/assets/64610385/97d4793a-a345-499b-a35c-67e86b38584d)
 
+## Introdução da diretiva critical
+
+
 
 ### Resultados novos na AWS:
 
