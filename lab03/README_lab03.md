@@ -16,8 +16,9 @@ Laboratório 3 foi feito na linguagem c, com o uso da AWS para testes e Livegap 
 
 
 
-* Serial:  segundo
+* Serial:  3,108 segundos
 
+![image](https://github.com/Gustavo-Aragao-Guedes/CP05G/assets/64610385/09fa0d1e-9360-406a-b646-1515789a0917)
 
 
 
