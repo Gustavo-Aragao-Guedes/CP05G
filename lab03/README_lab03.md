@@ -4,6 +4,8 @@
 
 Laboratório 3 foi feito na linguagem c, com o uso da AWS para testes e Livegap Charts (https://charts.livegap.com/) para a criação dos gráficos.
 
+Para os testes, foram usados 100 trapézios e 100 threads para o cálculo da área.
+
 ### Testes
 
 **1 processador (AWS):**
