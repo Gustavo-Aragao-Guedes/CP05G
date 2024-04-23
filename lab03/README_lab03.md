@@ -68,6 +68,8 @@ Alguns dos valores de tempo e speedups foram arredondados para ficarem com apena
 
 * 8P = 3,108 / 0,610 = 5,095
 
+![Speedup - Área sob a curva através da soma de trapézios](https://github.com/Gustavo-Aragao-Guedes/CP05G/assets/64610385/97d4793a-a345-499b-a35c-67e86b38584d)
+
 
 ### Resultados novos na AWS:
 
