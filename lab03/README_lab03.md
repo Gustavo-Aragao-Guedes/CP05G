@@ -14,12 +14,6 @@ Para os testes, foram utilizados os valores de 100 trapézios e 100 threads para
 
 ![Configuração 1CPU](https://github.com/Gustavo-Aragao-Guedes/CP05G/assets/64610385/1ac61e5f-eba8-493f-938c-798cfa8fce66)
 
-
-
-
-
-
-
 * Serial:  3,108 segundos
 
 ![image](https://github.com/Gustavo-Aragao-Guedes/CP05G/assets/64610385/09fa0d1e-9360-406a-b646-1515789a0917)
@@ -32,30 +26,29 @@ Para os testes, foram utilizados os valores de 100 trapézios e 100 threads para
 
 **2 processadores:  Intel(R) Xeon(R) CPU E5-2670 v3 @ 2.30GHz**
 
-* Serial:  segundos
+* Serial: 3,108 segundos
 
-* Paralelo:  segundos
+* Paralelo: 2,439 segundos
 
 **4 processadores:  Intel(R) Xeon(R) i7-3612QM CPU @ 2.10GHz**
 
 ![312434718-f59d2790-14d1-4f47-93b3-95a59d3130a9](https://github.com/Gustavo-Aragao-Guedes/CP05G/assets/64610385/91ab9e16-1096-41b4-a9fd-c00fff71262f)
 
-* Serial:  segundos
+* Serial: 3,108 segundos
 
-* Paralelo:  segundos
-
+* Paralelo: 1,2195 segundos
 
 **6 processadores: Intel(R) Xeon(R) CPU E-2236 @ 3.40GHz**
 
-* Serial:  segundos
+* Serial: 3,108 segundos
 
-* Paralelo:  segundos
+* Paralelo: 0,949 segundos
 
 **8 processadores: Intel(R) Xeon(R) CPU E5-2670 v3 @ 2.30GHz**
 
-* Serial:  segundos
+* Serial: 3,108 segundos
   
-* Paralelo:  segundos
+* Paralelo: 0,60975 segundos
 
 ## Tempo de execução:
 
