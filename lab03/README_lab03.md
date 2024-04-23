@@ -23,10 +23,9 @@ Para os testes, foram usados 100 trapézios e 100 threads para o cálculo da ár
 ![image](https://github.com/Gustavo-Aragao-Guedes/CP05G/assets/64610385/09fa0d1e-9360-406a-b646-1515789a0917)
 
 
+* Paralelo: 4,878 segundos
 
-
-* Paralelo:  segundos
-
+![image](https://github.com/Gustavo-Aragao-Guedes/CP05G/assets/64610385/b0f48d26-2920-41be-b8b6-5b2085f437c6)
 
 
 **2 processadores:  Intel(R) Xeon(R) CPU E5-2670 v3 @ 2.30GHz**
