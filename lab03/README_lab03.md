@@ -70,9 +70,9 @@ Alguns dos valores de tempo e speedups foram arredondados para ficarem com apena
 
 ![Speedup - Área sob a curva através da soma de trapézios](https://github.com/Gustavo-Aragao-Guedes/CP05G/assets/64610385/97d4793a-a345-499b-a35c-67e86b38584d)
 
-## Introdução da diretiva critical
+## Diretiva critical
 
-
+Com a introdução da diretiva critical no código, a operação de soma da área sob a curva agora é protegida por ela, garantindo que apenas uma thread execute essa operação por vez. Isso evita possíveis problemas de concorrência que poderiam ocorrer se várias threads tentassem modificar a mesma variável ao mesmo tempo.
 
 ### Resultados novos na AWS:
 
