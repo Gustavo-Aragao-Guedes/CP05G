@@ -24,11 +24,19 @@ double area_sob_curva(double a, double b, int n) {
 int main() {
     double a = 0.0; 
     double b = M_PI; 
-    int n = 9; 
+    int n; 
+    int num_threads; 
 
-    int num_threads;
+    printf("Digite o número de trapézios desejado: ");
+    scanf("%d", &n);
+
     printf("Digite o número de threads desejado: ");
     scanf("%d", &num_threads);
+
+    if (n <= 0 || num_threads <= 0) {
+        printf("O número de trapézios e o número de threads devem ser positivos.\n");
+        return 1;
+    }
 
     double area = 0.0;
 
@@ -41,9 +49,7 @@ int main() {
         area += local_area;
     }
 
-    // Imprime o resultado
     printf("A área sob a curva é aproximadamente: %.6f\n", area);
 
     return 0;
 }
-
