@@ -14,7 +14,7 @@ double calcular_e(int n) {
 }
 
 int main() {
-    double epsilon = 1e-25; // Critério de parada
+    double epsilon = 1e-50; // Critério de parada
     double e_anterior = 0.0;
     double e_atual = 1.0;
     int n = 1;
@@ -28,7 +28,7 @@ int main() {
     }
 
     printf("Valor de 'e' final: %.25f\n", e_atual);
-    printf("Tempo para atingir esse valor: %.25f segundos\n", tempo);
+    printf("Tempo para atingir esse valor: %.50f segundos\n", tempo);
 
     return 0;
 }
