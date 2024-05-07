@@ -54,7 +54,7 @@ Alguns dos valores de tempo e speedups foram arredondados para ficarem com apena
 
 ## Tempo de execução:
 
-IMAGEM GRAFICO
+![Problema da Tartaruga Tempo](https://github.com/Gustavo-Aragao-Guedes/CP05G/assets/64610385/f62ec320-91b3-4fd4-9cdb-8ec80f5f4fa9)
 
 ## Speedup
 
