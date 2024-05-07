@@ -6,9 +6,9 @@ Laboratório V1 foi feito na linguagem c, com o uso da AWS para testes e Livegap
 
 Inclusão da API OpenMP.
 
-Nesta versão, utilizei a cláusula reduction(+:tempo) para garantir que a variável tempo seja atualizada de forma correta em ambientes de paralelização. Além disso, a variável e_anterior é privada a cada thread para evitar condições de corrida.
+Para os testes, foram calculados 50 números depois da vírgula.
 
-O loop for principal foi transformado em uma região paralela usando a diretiva #pragma omp parallel for. A cláusula schedule(static) distribui uniformemente as iterações do loop entre as threads.
+Alguns dos valores de tempo e speedups foram arredondados para ficarem com apenas 3 casas decimais depois da vírgula.
 
 
 ### Testes
@@ -28,29 +28,29 @@ O loop for principal foi transformado em uma região paralela usando a diretiva 
 
 **2 processadores:  Intel(R) Xeon(R) CPU E5-2670 v3 @ 2.30GHz**
 
-* Serial:  segundos
+* Serial: 1 segundo
 
-* Paralelo:  segundos
+* Paralelo: 1 segundo
 
 **4 processadores:  Intel(R) Xeon(R) i7-3612QM CPU @ 2.10GHz**
 
-IMAGEM
+![312434718-f59d2790-14d1-4f47-93b3-95a59d3130a9](https://github.com/Gustavo-Aragao-Guedes/CP05G/assets/64610385/91ab9e16-1096-41b4-a9fd-c00fff71262f)
 
-* Serial:  segundos
+* Serial: 1 segundo
 
-* Paralelo:  segundos
+* Paralelo: 0,5 segundos
 
 **6 processadores: Intel(R) Xeon(R) CPU E-2236 @ 3.40GHz**
 
-* Serial:  segundos
+* Serial: 1 segundo
 
-* Paralelo:  segundos
+* Paralelo: 0,33 segundos
 
 **8 processadores: Intel(R) Xeon(R) CPU E5-2670 v3 @ 2.30GHz**
 
-* Serial:  segundos
+* Serial: 1 segundo
   
-* Paralelo:  segundos
+* Paralelo: 0,25 segundos
 
 ## Tempo de execução:
 
