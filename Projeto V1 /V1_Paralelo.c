@@ -18,16 +18,17 @@ int main() {
     double epsilon = 1e-50; // Critério de parada
     double e_anterior = 0.0;
     double e_atual = 1.0;
-    int n = 1;
+    int n;
     double tempo = 0.0;
+    int terminar = 0;
 
-    #pragma omp parallel for reduction(+:tempo) private(e_anterior) shared(e_atual) schedule(static)
-    for (n = 1;; n++) {
+    #pragma omp parallel for reduction(+:tempo) private(e_anterior) shared(e_atual, terminar) schedule(static)
+    for (n = 1; !terminar; n++) {
         e_anterior = e_atual;
         e_atual = calcular_e(n);
         tempo += 1.0 / e_atual;
         if (fabs(e_atual - e_anterior) <= epsilon) {
-            break;
+            terminar = 1;
         }
     }
 
