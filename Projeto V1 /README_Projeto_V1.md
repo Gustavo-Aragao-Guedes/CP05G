@@ -21,16 +21,16 @@ Alguns dos valores de tempo e speedups foram arredondados para ficarem com apena
 
 ![image](https://github.com/Gustavo-Aragao-Guedes/CP05G/assets/64610385/8c1466af-0b6d-4e0a-b86c-17bacc97b2db)
 
-* Paralelo: 2 segundos
+* Paralelo: 6 segundos
 
-![image](https://github.com/Gustavo-Aragao-Guedes/CP05G/assets/64610385/a05500f2-9280-48e0-868d-c3caf1ff2f5b)
+![image](https://github.com/Gustavo-Aragao-Guedes/CP05G/assets/64610385/87ec5578-c618-45ef-bd77-e9540b1012ab)
 
 
 **2 processadores:  Intel(R) Xeon(R) CPU E5-2670 v3 @ 2.30GHz**
 
 * Serial: 1 segundo
 
-* Paralelo: 1 segundo
+* Paralelo: 3 segundo
 
 **4 processadores:  Intel(R) Xeon(R) i7-3612QM CPU @ 2.10GHz**
 
@@ -38,19 +38,19 @@ Alguns dos valores de tempo e speedups foram arredondados para ficarem com apena
 
 * Serial: 1 segundo
 
-* Paralelo: 0,5 segundos
+* Paralelo: 1,5 segundos
 
 **6 processadores: Intel(R) Xeon(R) CPU E-2236 @ 3.40GHz**
 
 * Serial: 1 segundo
 
-* Paralelo: 0,33 segundos
+* Paralelo: 1 segundos
 
 **8 processadores: Intel(R) Xeon(R) CPU E5-2670 v3 @ 2.30GHz**
 
 * Serial: 1 segundo
   
-* Paralelo: 0,25 segundos
+* Paralelo: 0,75 segundos
 
 ## Tempo de execução:
 
@@ -58,17 +58,18 @@ Alguns dos valores de tempo e speedups foram arredondados para ficarem com apena
 
 ## Speedup
 
-* 1P = 1 / 2 = 0,5
+* 1P = 1 / 6 = 0,166
 
-* 2P = 1 / 1 = 1
+* 2P = 1 / 3 = 0,333
 
-* 4P = 1 / 0,5 = 2
+* 4P = 1 / 1,5 = 0,666
 
-* 6P = 1 / 0,33 = 3,03
+* 6P = 1 / 1 = 1
 
-* 8P = 1 / 0,25 = 4
+* 8P = 1 / 0,75 = 1,333
 
-![Problema da Tartaruga speedup](https://github.com/Gustavo-Aragao-Guedes/CP05G/assets/64610385/9925e0f5-b6b1-4639-88c2-81da11093e3c)
+![Problema da Tartaruga speedup](https://github.com/Gustavo-Aragao-Guedes/CP05G/assets/64610385/5289bcad-e6e3-4b09-a9ee-048a790b71f8)
+
 
 ## Diretiva critical
 
