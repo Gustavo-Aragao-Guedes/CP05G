@@ -25,7 +25,6 @@ Alguns dos valores de tempo e speedups foram arredondados para ficarem com apena
 
 ![image](https://github.com/Gustavo-Aragao-Guedes/CP05G/assets/64610385/87ec5578-c618-45ef-bd77-e9540b1012ab)
 
-
 **2 processadores:  Intel(R) Xeon(R) CPU E5-2670 v3 @ 2.30GHz**
 
 * Serial: 1 segundo
@@ -54,7 +53,7 @@ Alguns dos valores de tempo e speedups foram arredondados para ficarem com apena
 
 ## Tempo de execução:
 
-![Problema da Tartaruga Tempo](https://github.com/Gustavo-Aragao-Guedes/CP05G/assets/64610385/f62ec320-91b3-4fd4-9cdb-8ec80f5f4fa9)
+![Problema da Tartaruga Tempo](https://github.com/Gustavo-Aragao-Guedes/CP05G/assets/64610385/f35b67ab-4e87-4390-904a-e22ed4b55860)
 
 ## Speedup
 
@@ -75,33 +74,36 @@ Alguns dos valores de tempo e speedups foram arredondados para ficarem com apena
 
 A seção crítica #pragma omp critical garante que apenas uma thread por vez execute a atualização das variáveis globais n, e_atual e tempo. Isso evita problemas de corrida que podem ocorrer quando várias threads tentam acessar e modificar as mesmas variáveis simultaneamente.
 
-IMAGEM
+![image](https://github.com/Gustavo-Aragao-Guedes/CP05G/assets/64610385/84040619-575d-4552-b62e-ace549c5cb62)
 
-Sem critical:  segundos
+Sem critical: 6 segundos
 
-Com critical:  segundos
+Com critical: 6 segundos
 
-* 1P =  segundos
+* 1P = 6 segundos
 
-* 2P =  segundos
+* 2P = 3 segundos
 
-* 4P =  segundos
+* 4P = 1,5 segundos
 
-* 6P =  segundos
+* 6P = 1 segundos
 
-* 8P =  segundos
+* 8P = 0,75 segundos
 
-## Novo Speedup
+## Novo Speedup 
 
-* 1P =  /  = 
+Permance igual pois os tempos foram iguais
 
-* 2P =  /  = 
+* 1P = 1 / 6 = 0,166
 
-* 4P =  /  = 
+* 2P = 1 / 3 = 0,333
 
-* 6P =  /  = 
+* 4P = 1 / 1,5 = 0,666
 
-* 8P =  /  = 
+* 6P = 1 / 1 = 1
 
-IMAGEM
+* 8P = 1 / 0,75 = 1,333
+
+![Problema da Tartaruga speedup critical](https://github.com/Gustavo-Aragao-Guedes/CP05G/assets/64610385/23b4433f-754c-42aa-9966-b8b27b9b8618)
+
 
