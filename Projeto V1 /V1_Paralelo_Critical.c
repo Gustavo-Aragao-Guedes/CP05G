@@ -2,7 +2,7 @@
 #include <math.h>
 #include <omp.h>
 
-#define NUM_THREADS 4 
+#define NUM_THREADS 50
 
 double calcular_e(int n) {
     double e = 1.0;
@@ -35,7 +35,7 @@ int main() {
             local_e_anterior = local_e_atual;
             local_e_atual = calcular_e(local_n);
 
-            #pragma omp barrier 
+            #pragma omp barrier
 
             local_tempo += 1.0 / local_e_atual;
             local_n++;
