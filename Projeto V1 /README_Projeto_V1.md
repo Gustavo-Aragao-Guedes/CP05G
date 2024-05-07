@@ -17,7 +17,7 @@ O loop for principal foi transformado em uma região paralela usando a diretiva 
 
 ![Configuração 1CPU](https://github.com/Gustavo-Aragao-Guedes/CP05G/assets/64610385/1ac61e5f-eba8-493f-938c-798cfa8fce66)
 
-* Serial:  segundos
+* Serial: 6,795 segundos
 
 ![image](https://github.com/Gustavo-Aragao-Guedes/CP05G/assets/64610385/8c1466af-0b6d-4e0a-b86c-17bacc97b2db)
 
