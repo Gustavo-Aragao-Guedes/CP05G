@@ -6,7 +6,7 @@ Laboratório V1 foi feito na linguagem c, com o uso da AWS para testes e Livegap
 
 Inclusão da API OpenMP.
 
-Para os testes, foram calculados 50 números depois da vírgula.
+Para os testes, foram calculados 50 números depois da vírgula e usadas 50 threads.
 
 Alguns dos valores de tempo e speedups foram arredondados para ficarem com apenas 3 casas decimais depois da vírgula.
 
