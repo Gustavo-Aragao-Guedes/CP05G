@@ -2,7 +2,7 @@
 #include <math.h>
 #include <omp.h>
 
-#define NUM_THREADS 4 
+#define NUM_THREADS 50 
 
 double calcular_e(int n) {
     double e = 1.0;
