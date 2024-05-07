@@ -25,7 +25,7 @@ int main() {
     #pragma omp parallel reduction(+:tempo) private(n, e_anterior)
     {
         #pragma omp for schedule(static)
-        for (n = 1; !terminar; n++) {
+        for (n = 1; terminar == 0; n++) {
             e_anterior = e_atual;
             e_atual = calcular_e(n);
             tempo += 1.0 / e_atual;
