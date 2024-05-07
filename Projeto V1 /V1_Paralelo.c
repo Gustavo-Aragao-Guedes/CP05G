@@ -44,12 +44,14 @@ int main() {
                 break;
         }
 
-        #pragma omp critical
-        {
-            if (local_n > n) {
-                n = local_n;
-                e_atual = local_e_atual;
-                tempo = local_tempo;
+        if (local_n > n) {
+            #pragma omp critical
+            {
+                if (local_n > n) {
+                    n = local_n;
+                    e_atual = local_e_atual;
+                    tempo = local_tempo;
+                }
             }
         }
     }
