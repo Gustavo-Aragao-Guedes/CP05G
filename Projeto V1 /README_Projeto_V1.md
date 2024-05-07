@@ -72,7 +72,7 @@ Alguns dos valores de tempo e speedups foram arredondados para ficarem com apena
 
 ## Diretiva critical
 
-EXPLICAÇÃO
+A seção crítica #pragma omp critical garante que apenas uma thread por vez execute a atualização das variáveis globais n, e_atual e tempo. Isso evita problemas de corrida que podem ocorrer quando várias threads tentam acessar e modificar as mesmas variáveis simultaneamente.
 
 IMAGEM
 
