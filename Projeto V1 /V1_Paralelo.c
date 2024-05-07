@@ -2,6 +2,8 @@
 #include <math.h>
 #include <omp.h>
 
+#define NUM_THREADS 4 // Número de threads a serem usadas
+
 double calcular_e(int n) {
     double e = 1.0;
     double termo = 1.0;
@@ -18,19 +20,36 @@ int main() {
     double epsilon = 1e-50; // Critério de parada
     double e_anterior = 0.0;
     double e_atual = 1.0;
-    int n;
+    int n = 1;
     double tempo = 0.0;
-    int terminar = 0;
 
-    #pragma omp parallel reduction(+:tempo) private(n, e_anterior)
+    #pragma omp parallel num_threads(NUM_THREADS) private(n)
     {
-        #pragma omp for schedule(static) cancellation(terminar)
-        for (n = 1; ; n++) {
-            e_anterior = e_atual;
-            e_atual = calcular_e(n);
-            tempo += 1.0 / e_atual;
-            if (fabs(e_atual - e_anterior) <= epsilon) {
-                #pragma omp cancel for
+        int tid = omp_get_thread_num();
+        double local_e_anterior = 0.0;
+        double local_e_atual = 1.0;
+        double local_tempo = 0.0;
+        int local_n = 1;
+
+        while (1) {
+            local_e_anterior = local_e_atual;
+            local_e_atual = calcular_e(local_n);
+
+            #pragma omp barrier // Garante que todos os threads tenham calculado o novo e_atual antes de prosseguir
+
+            local_tempo += 1.0 / local_e_atual;
+            local_n++;
+
+            if (fabs(local_e_atual - local_e_anterior) <= epsilon)
+                break;
+        }
+
+        #pragma omp critical
+        {
+            if (local_n > n) {
+                n = local_n;
+                e_atual = local_e_atual;
+                tempo = local_tempo;
             }
         }
     }
