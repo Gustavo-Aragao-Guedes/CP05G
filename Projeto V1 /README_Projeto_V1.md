@@ -58,17 +58,17 @@ Alguns dos valores de tempo e speedups foram arredondados para ficarem com apena
 
 ## Speedup
 
-* 1P =  /  = 
+* 1P = 1 / 2 = 0,5
 
-* 2P =  /  = 
+* 2P = 1 / 1 = 1
 
-* 4P =  /  = 
+* 4P = 1 / 0,5 = 2
 
-* 6P =  /  = 
+* 6P = 1 / 0,33 = 3,03
 
-* 8P =  /  = 
+* 8P = 1 / 0,25 = 4
 
-IMAGEM GRÁFICO
+![Problema da Tartaruga speedup](https://github.com/Gustavo-Aragao-Guedes/CP05G/assets/64610385/9925e0f5-b6b1-4639-88c2-81da11093e3c)
 
 ## Diretiva critical
 
