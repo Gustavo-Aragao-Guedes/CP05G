@@ -2,7 +2,7 @@
 #include <math.h>
 #include <omp.h>
 
-#define NUM_THREADS 4 // Número de threads a serem usadas
+#define NUM_THREADS 4 
 
 double calcular_e(int n) {
     double e = 1.0;
@@ -35,7 +35,7 @@ int main() {
             local_e_anterior = local_e_atual;
             local_e_atual = calcular_e(local_n);
 
-            #pragma omp barrier // Garante que todos os threads tenham calculado o novo e_atual antes de prosseguir
+            #pragma omp barrier 
 
             local_tempo += 1.0 / local_e_atual;
             local_n++;
