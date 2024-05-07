@@ -19,6 +19,10 @@ O loop for principal foi transformado em uma região paralela usando a diretiva 
 
 * Serial:  segundos
 
+![image](https://github.com/Gustavo-Aragao-Guedes/CP05G/assets/64610385/8c1466af-0b6d-4e0a-b86c-17bacc97b2db)
+
+
+
 
 
 * Paralelo:  segundos
