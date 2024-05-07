@@ -24,14 +24,13 @@ int main() {
 
     #pragma omp parallel reduction(+:tempo) private(n, e_anterior)
     {
-        #pragma omp for schedule(static)
-        for (n = 1; terminar == 0; n++) {
+        #pragma omp for schedule(static) cancellation(terminar)
+        for (n = 1; ; n++) {
             e_anterior = e_atual;
             e_atual = calcular_e(n);
             tempo += 1.0 / e_atual;
             if (fabs(e_atual - e_anterior) <= epsilon) {
-                #pragma omp atomic write
-                terminar = 1;
+                #pragma omp cancel for
             }
         }
     }
