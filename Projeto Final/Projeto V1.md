@@ -6,6 +6,10 @@ Laboratório V1 foi feito na linguagem c, com o uso da AWS para testes e Livegap
 
 Inclusão da API OpenMP.
 
+Nesta versão, utilizei a cláusula reduction(+:tempo) para garantir que a variável tempo seja atualizada de forma correta em ambientes de paralelização. Além disso, a variável e_anterior é privada a cada thread para evitar condições de corrida.
+
+O loop for principal foi transformado em uma região paralela usando a diretiva #pragma omp parallel for. A cláusula schedule(static) distribui uniformemente as iterações do loop entre as threads.
+
 
 ### Testes
 
