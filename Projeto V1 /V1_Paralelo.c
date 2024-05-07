@@ -22,13 +22,17 @@ int main() {
     double tempo = 0.0;
     int terminar = 0;
 
-    #pragma omp parallel for reduction(+:tempo) private(e_anterior) shared(e_atual, terminar) schedule(static)
-    for (n = 1; !terminar; n++) {
-        e_anterior = e_atual;
-        e_atual = calcular_e(n);
-        tempo += 1.0 / e_atual;
-        if (fabs(e_atual - e_anterior) <= epsilon) {
-            terminar = 1;
+    #pragma omp parallel reduction(+:tempo) private(n, e_anterior)
+    {
+        #pragma omp for schedule(static)
+        for (n = 1; !terminar; n++) {
+            e_anterior = e_atual;
+            e_atual = calcular_e(n);
+            tempo += 1.0 / e_atual;
+            if (fabs(e_atual - e_anterior) <= epsilon) {
+                #pragma omp atomic write
+                terminar = 1;
+            }
         }
     }
 
