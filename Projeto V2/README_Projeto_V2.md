@@ -38,3 +38,13 @@ Configuração do OpenMP: omp_set_num_threads(8) configura o uso de 8 threads.
 Cálculo da Série: A diretiva #pragma omp parallel for reduction(+:e) paraleliza o loop for para distribuir os cálculos dos termos entre as threads. Cada thread calcula um termo da série e usa a diretiva critical para somar o termo ao valor de e de forma segura.
 Medição do Tempo: omp_get_wtime() é usado para medir o tempo de execução do cálculo.
 Impressão dos Resultados: Após o cálculo, o valor final de e e o tempo de execução são impressos.
+
+
+Comando para compilar:
+
+gcc -fopenmp -o (nome) (nome).c
+
+./(nome)
+
+
+
