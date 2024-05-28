@@ -23,6 +23,14 @@ Proteção da Seção Crítica:
 
 A diretiva #pragma omp critical é mantida para proteger a atualização da soma e.
 
+Entrada Interativa:
+
+scanf é usado para solicitar ao usuário o número de threads a serem usadas.
+O número de threads é configurado com omp_set_num_threads(num_threads).
+Configuração de Threads:
+
+O programa permite que o usuário especifique o número de threads, oferecendo flexibilidade para experimentar diferentes configurações de threads sem recompilar o código.
+
 ## Explicação do código:
 
 Função factorial: Calcula o fatorial de um número, essencial para calcular cada termo da série de Taylor.
