@@ -40,7 +40,7 @@ int main() {
     // Configura o número de threads
     omp_set_num_threads(num_threads);
 
-    // Usa uma variável de redução privada para evitar a diretiva critical
+    // Uso de uma variável de redução privada para evitar a diretiva critical
     #pragma omp parallel for reduction(+:e)
     for (int i = 0; i <= n; i++) {
         e += 1.0L / factorial_cache[i];
