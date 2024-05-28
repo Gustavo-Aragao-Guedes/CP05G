@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <gmp.h>
 
-// Função para calcular o fatorial de um número, com uso de memoização
+// Função para calcular o fatorial de um número usando memoização
 void calculate_factorials(int n, mpf_t *factorial_cache) {
     mpf_set_ui(factorial_cache[0], 1); // 0! = 1
     for (int i = 1; i <= n; i++) {
@@ -12,15 +12,15 @@ void calculate_factorials(int n, mpf_t *factorial_cache) {
 }
 
 int main() {
-    int n = 1000; // Número de termos para a série de Taylor
-    mpf_set_default_prec(1024); // Define a precisão para 1024 bits
+    int n = 20000; // Número de termos para a série de Taylor
+    mpf_set_default_prec(4096); // Define precisão para 4096 bits
     mpf_t e;
     mpf_init(e);
     mpf_set_ui(e, 0);
 
     int num_threads;
 
-    // Solicita o número de threads ao usuário
+    // Solicita o número de threads ao usuário 
     printf("Digite o número de threads a serem usadas: ");
     scanf("%d", &num_threads);
 
@@ -44,7 +44,7 @@ int main() {
     // Configura o número de threads
     omp_set_num_threads(num_threads);
 
-    // Usa uma variável de redução privada para evitar a diretiva critical
+    // Uso de uma variável de redução privada para evitar a diretiva critical
     #pragma omp parallel
     {
         mpf_t local_e;
@@ -73,7 +73,7 @@ int main() {
     double elapsed_time = end_time - start_time;
 
     // Imprime os resultados
-    gmp_printf("O valor final de e calculado: %.50Ff\n", e); // Imprime com 50 casas decimais
+    gmp_printf("O valor final de e calculado: %.5000Ff\n", e); // Imprime com até 5000 casas decimais
     printf("Tempo total: %f segundos\n", elapsed_time);
 
     // Libera a memória alocada para o cache dos fatoriais
