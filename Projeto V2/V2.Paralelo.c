@@ -50,7 +50,7 @@ int main() {
     double end_time = omp_get_wtime();
     double elapsed_time = end_time - start_time;
 
-    // Imprime os resultados
+    // Imprimi os resultados
     printf("O valor final de e calculado: %.15Lf\n", e);
     printf("Tempo total: %f segundos\n", elapsed_time);
 
@@ -59,4 +59,3 @@ int main() {
 
     return 0;
 }
-
