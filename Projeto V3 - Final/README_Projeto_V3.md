@@ -6,13 +6,14 @@ Terceira e última versão do projeto foi feita na linguagem c.
 
 
 
-## Mudanças da versão 1:
+## Mudanças da versão 2:
 
 
 ## Explicação do código:
 
 
+Comando para compilar o código:
 
-gcc -fopenmp -lgmp -o calc_e_gmp calc_e_gmp.c
+gcc -fopenmp -lgmp -o (nome) (nome).c
 
-./calc_e_gmp
+./(nome)
