@@ -15,7 +15,7 @@ int main() {
     long double e = 0.0;
     int num_threads;
 
-    // Solicitar ao usuário o número de threads
+    // Solicita o número de threads ao usuário 
     printf("Digite o número de threads a serem usadas: ");
     scanf("%d", &num_threads);
 
@@ -24,37 +24,37 @@ int main() {
         return 1;
     }
 
-    // Alocar memória para o cache dos fatoriais
+    // Aloca memória para o cache dos fatoriais
     unsigned long long *factorial_cache = (unsigned long long *)calloc(n + 1, sizeof(unsigned long long));
     if (factorial_cache == NULL) {
         printf("Erro ao alocar memória para o cache dos fatoriais.\n");
         return 1;
     }
 
-    // Calcular os fatoriais antes do loop paralelo
+    // Calcula os fatoriais antes do loop paralelo
     calculate_factorials(n, factorial_cache);
 
-    // Começar a contagem do tempo
+    // Começa a contagem do tempo
     double start_time = omp_get_wtime();
 
-    // Configurar o número de threads
+    // Configura o número de threads
     omp_set_num_threads(num_threads);
 
-    // Usar uma variável de redução privada para evitar a diretiva critical
+    // Usa uma variável de redução privada para evitar a diretiva critical
     #pragma omp parallel for reduction(+:e)
     for (int i = 0; i <= n; i++) {
         e += 1.0L / factorial_cache[i];
     }
 
-    // Parar a contagem do tempo
+    // Para a contagem do tempo
     double end_time = omp_get_wtime();
     double elapsed_time = end_time - start_time;
 
-    // Imprimir os resultados
+    // Imprime os resultados
     printf("O valor final de e calculado: %.15Lf\n", e);
     printf("Tempo total: %f segundos\n", elapsed_time);
 
-    // Liberar a memória alocada para o cache dos fatoriais
+    // Libera a memória alocada para o cache dos fatoriais
     free(factorial_cache);
 
     return 0;
