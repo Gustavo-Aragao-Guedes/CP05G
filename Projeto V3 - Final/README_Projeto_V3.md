@@ -1,4 +1,8 @@
-gtrggr
+**Gustavo Aragão Guedes**
+
+**RA: 10376534**
+
+Terceira e última versão do projeto foi feita na linguagem c.
 
 
 
