@@ -10,13 +10,13 @@ Imprime 5000 casas decimais do Valor de Euler
 
 **1. Biblioteca Adicional: `#include <gmp.h>`**
 
-  Inclusão da biblioteca GMP (GNU Multiple Precision Arithmetic Library).
+  Inclusão da biblioteca GMP (GNU Multiple Precision Arithmetic Library)
   
   **Benefício**: 
   - A biblioteca GMP permite operações aritméticas de alta precisão, necessárias para calcular muitas casas decimais da constante 'e'. 
   - Usando `mpf_t`, a precisão pode ser configurada para operar com números de precisão arbitrária, muito superior à oferecida por tipos de dados nativos do C.
 
-**2. **Alteração na Função de Cálculo do Fatorial**
+**2. Alteração na Função de Cálculo do Fatorial**
 
   A função `calculate_factorials` foi modificada para usar `mpf_t` em vez de `unsigned long long`.
   
@@ -46,14 +46,14 @@ Imprime 5000 casas decimais do Valor de Euler
 
 **6. Uso de `malloc` e `mpf_init` para Alocar Memória**
 
-  - `mpf_t *factorial_cache` é alocado usando `malloc` e inicializado com `mpf_init`.
+  `mpf_t *factorial_cache` é alocado usando `malloc` e inicializado com `mpf_init`.
   
   **Benefício**: 
   - Permite alocação dinâmica de memória para armazenamento de fatoriais com precisão arbitrária, garantindo que a memória é gerenciada corretamente para grandes valores de 'n'.
 
 **7. Loop Paralelo com Redução Local e Crítica Global**
 
-  - Uso de variáveis locais para a soma parcial dentro do loop paralelo e adição crítica para somar os resultados parciais ao valor global de 'e'.
+  Uso de variáveis locais para a soma parcial dentro do loop paralelo e adição crítica para somar os resultados parciais ao valor global de 'e'.
   
   **Benefício**: 
   - Reduz a contenção de threads na seção crítica, melhorando a eficiência do programa.
@@ -61,14 +61,14 @@ Imprime 5000 casas decimais do Valor de Euler
 
 **8. Impressão com Alta Precisão**
 
-  - Uso de `gmp_printf` para imprimir 'e' com até 5000 casas decimais.
+  Uso de `gmp_printf` para imprimir 'e' com até 5000 casas decimais.
   
   **Benefício**: 
   - Permite a exibição de um grande número de casas decimais da constante 'e', demonstrando a precisão do cálculo.
 
 **9. Limpeza de Memória**
 
-  - Uso de `mpf_clear` para liberar memória alocada para variáveis `mpf_t`.
+  Uso de `mpf_clear` para liberar memória alocada para variáveis `mpf_t`.
   
   **Benefício**: 
   - Garante que toda a memória dinâmica é liberada corretamente, prevenindo vazamentos de memória.
