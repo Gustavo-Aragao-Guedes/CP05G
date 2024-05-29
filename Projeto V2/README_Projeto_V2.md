@@ -45,7 +45,7 @@ Segunda versão do projeto feita na linguagem C.
 
 ## Bibliotecas utilizadas:
 
-1. **<stdio.h>**
+**1. <stdio.h>**
 
    - Proporciona funções para operações de entrada e saída.
    
@@ -57,7 +57,7 @@ Segunda versão do projeto feita na linguagem C.
    
    - scanf: Utilizado para ler o número de threads que o usuário deseja utilizar.
 
-2. **<omp.h>**
+**2. <omp.h>**
 
    - Habilita a programação paralela utilizando OpenMP.
    
@@ -71,7 +71,7 @@ Segunda versão do projeto feita na linguagem C.
    
    - omp_get_wtime(): Utilizado para medir o tempo de execução do cálculo paralelo.
 
-3. **<stdlib.h>**
+**3. <stdlib.h>**
 
    - Oferece funções para alocação e gerenciamento dinâmico de memória.
    
