@@ -5,7 +5,7 @@
 Segunda versão do projeto foi feita na linguagem c.
 
 
-## Mudanças da versão 1:
+## Mudanças dessa versão:
 
 Aumentando a Precisão
 Para calcular mais dígitos de 
