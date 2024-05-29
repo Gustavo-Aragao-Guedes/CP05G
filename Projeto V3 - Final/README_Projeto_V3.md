@@ -75,15 +75,105 @@ Imprime 5000 casas decimais do Valor de Euler
 
 ## Bibliotecas utilizadas:
 
+**1. <stdio.h>**
 
+Proporciona funções de entrada e saída padrão.
+    
+  Exemplos no código:
 
-## Funcionamento do código:
+  - printf("Digite o número de threads a serem usadas: "); exibe uma mensagem solicitando a entrada do usuário.
 
+  - scanf("%d", &num_threads); lê o número de threads inserido pelo usuário.
 
+  - printf("Tempo total: %f segundos\n", elapsed_time); exibe o tempo total de execução do programa.
 
+**2. <omp.h>**
 
+  Permite o uso de OpenMP para programação paralela, melhorando o desempenho ao dividir o trabalho entre múltiplas threads.
+  
+  Exemplos no código:
+  
+  - omp_set_num_threads(num_threads); configura o número de threads a serem usadas na execução paralela.
 
+  - double start_time = omp_get_wtime(); obtém o tempo de início da execução paralela.
 
+  - #pragma omp parallel inicia uma região paralela.
+
+  - #pragma omp for schedule(dynamic) distribui dinamicamente as iterações do loop entre as threads.
+
+  - #pragma omp critical garante que a adição à variável e seja realizada de forma segura em um ambiente multi-thread.
+
+**3. <stdlib.h>**
+
+  Fornece funções para gerenciamento de memória dinâmica.
+  
+  Exemplos no código:
+  
+  - mpf_t *factorial_cache = (mpf_t *)malloc((n + 1) * sizeof(mpf_t)); aloca memória para o cache dos fatoriais.
+
+  - free(factorial_cache); libera a memória alocada para o cache dos fatoriais.
+
+**4. <gmp.h>**
+
+  Proporciona tipos e funções para aritmética de precisão arbitrária, essencial para cálculos que requerem alta precisão.
+  
+  Exemplos no código:
+
+  - mpf_set_default_prec(4096); define a precisão padrão para 4096 bits.
+
+  - mpf_t e; mpf_init(e); inicializa a variável e com precisão arbitrária.
+
+  - mpf_set_ui(e, 0); define o valor inicial de e como 0.
+
+  - mpf_mul_ui(factorial_cache[i], factorial_cache[i-1], i); calcula o fatorial usando multiplicação de precisão arbitrária.
+
+  - mpf_ui_div(term, 1, factorial_cache[i]); calcula o inverso do fatorial para o termo da série.
+
+  - gmp_printf("O valor final de e calculado: %.5000Ff\n", e); imprime o valor final de e com até 5000 casas decimais.
+
+  - mpf_clear(e); libera a memória associada à variável e de precisão arbitrária.
+
+## Funcionamento passo a passo do código:
+
+**1. Importação de Bibliotecas:**
+
+  Inclui bibliotecas para entrada/saída, programação paralela, alocação de memória e aritmética de precisão arbitrária.
+  
+**2. Função de Cálculo de Fatoriais:**
+
+  Usa memoização para calcular e armazenar os fatoriais até o valor n, utilizando alta precisão, evitando cálculos repetidos.
+  
+**3. Solicitação do Número de Threads:**
+
+  O programa solicita ao usuário o número de threads a serem utilizadas e valida a entrada.
+  
+**4. Configuração Inicial:**
+
+  Define a precisão padrão para os cálculos com alta precisão e inicializa as variáveis necessárias, incluindo a variável de resultado e um array para armazenar os fatoriais.
+  
+**5. Alocação de Memória para Fatoriais:**
+
+  Aloca memória dinamicamente para armazenar os fatoriais calculados com alta precisão.
+  
+**6. Cálculo de Fatoriais:**
+
+  Calcula todos os fatoriais necessários antes do loop paralelo e os armazena no array alocado.
+
+**7. Configuração e Execução de Paralelismo:**
+
+  Configura o número de threads e utiliza programação paralela para somar os termos da série de Taylor, utilizando uma variável local para cada thread para evitar conflitos de escrita.
+  
+**8. Redução Crítica:**
+
+  Soma os resultados parciais de cada thread em uma região crítica para obter o resultado final de forma segura.
+  
+**9. Medição e Impressão do Tempo de Execução:**
+
+  Mede o tempo total de execução e imprime o valor calculado de e com alta precisão, além do tempo de execução total.
+
+**10. Liberação de Memória:**
+
+  Libera a memória alocada para os cálculos de alta precisão e outras variáveis utilizadas.
 
 ## Comando para compilar o código:
 
