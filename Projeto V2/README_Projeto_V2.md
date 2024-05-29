@@ -118,9 +118,9 @@ Segunda versão do projeto feita na linguagem C.
 
 ## Comando para compilar o código:
 
-gcc -fopenmp -o (nome) (nome).c
+gcc -fopenmp -o V2_Paralelo V2_Paralelo.c
 
-./(nome)
+./V2_Paralelo
 
 
 
