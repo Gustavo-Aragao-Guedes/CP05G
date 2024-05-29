@@ -83,7 +83,7 @@ Segunda versão do projeto feita na linguagem C.
    
    - free: Libera a memória alocada para o factorial_cache após o cálculo.
 
-## Funcionamento do código:
+## Funcionamento passo a passo do código:
 
 1. **Importação de Bibliotecas**:
    - Inclui bibliotecas para entrada/saída, programação paralela e alocação de memória.
