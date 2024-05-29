@@ -177,7 +177,6 @@ Proporciona funções de entrada e saída padrão.
 
 ## Comando para compilar o código:
 
-gcc -fopenmp -lgmp -o (nome) (nome).c
+gcc -fopenmp -lgmp -o V3_Final V3_Final.c
 
-
-./(nome)
+./V3_Final
