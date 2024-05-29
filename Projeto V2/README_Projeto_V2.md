@@ -2,7 +2,7 @@
 
 **RA: 10376534**
 
-Segunda versão do projeto foi feita na linguagem c.
+Segunda versão do projeto feita na linguagem C.
 
 
 ## Diferenças dessa versão para a versão 1:
@@ -45,43 +45,43 @@ Segunda versão do projeto foi feita na linguagem c.
 
 ## Bibliotecas utilizadas:
 
-1. **#include <stdio.h>**
+1. **<stdio.h>**
 
-- Proporciona funções para operações de entrada e saída.
+   - Proporciona funções para operações de entrada e saída.
+   
+   - Permite interagir com o usuário e exibir resultados no console.
+   
+   Exemplos no Código:
 
-- Permite interagir com o usuário e exibir resultados no console.
+   - printf: Usado para solicitar o número de threads, exibir mensagens de erro e mostrar os resultados finais.
+   
+   - scanf: Utilizado para ler o número de threads que o usuário deseja utilizar.
 
-Exemplos no Código:
+2. **<omp.h>**
 
-- printf: Usado para solicitar o número de threads, exibir mensagens de erro e mostrar os resultados finais.
+   - Habilita a programação paralela utilizando OpenMP.
+   
+   - Permite a execução de múltiplos threads para aumentar a eficiência e o desempenho do programa.
+   
+   Exemplos no Código:
+   
+   - omp_set_num_threads(num_threads): Configura o número de threads a serem usadas na execução paralela.
+   
+   - #pragma omp parallel for reduction(+:e): Paraleliza o loop que calcula a série de Taylor, usando redução para somar os resultados parciais de cada thread.
+   
+   - omp_get_wtime(): Utilizado para medir o tempo de execução do cálculo paralelo.
 
-- scanf: Utilizado para ler o número de threads que o usuário deseja utilizar.
+3. **<stdlib.h>**
 
-**#include <omp.h>**
-
-- Habilita a programação paralela utilizando OpenMP.
-
-- Permite a execução de múltiplos threads para aumentar a eficiência e o desempenho do programa.
-
-Exemplos no Código:
-
-- omp_set_num_threads(num_threads): Configura o número de threads a serem usadas na execução paralela.
-
-- #pragma omp parallel for reduction(+:e): Paraleliza o loop que calcula a série de Taylor, usando redução para somar os resultados parciais de cada thread.
-
-- omp_get_wtime(): Utilizado para medir o tempo de execução do cálculo paralelo.
-
-**#include <stdlib.h>**
-
-- Oferece funções para alocação e gerenciamento dinâmico de memória.
-
-- Permite alocar memória para o cache dos fatoriais e liberar essa memória após o uso.
-
-Exemplos no Código:
-
-- calloc: Aloca memória para o array factorial_cache e inicializa seus elementos com zero.
-
-- free: Libera a memória alocada para o factorial_cache após o cálculo.
+   - Oferece funções para alocação e gerenciamento dinâmico de memória.
+   
+   - Permite alocar memória para o cache dos fatoriais e liberar essa memória após o uso.
+   
+   Exemplos no Código:
+   
+   - calloc: Aloca memória para o array factorial_cache e inicializa seus elementos com zero.
+   
+   - free: Libera a memória alocada para o factorial_cache após o cálculo.
 
 ## Funcionamento do código:
 
@@ -116,7 +116,7 @@ Exemplos no Código:
     - Libera a memória alocada para o array de fatoriais.
 
 
-Comando para compilar:
+## Comando para compilar o código:
 
 gcc -fopenmp -o (nome) (nome).c
 
